@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		028C5BECAF6D08FB02C7BB2A71068FB2 /* NDLog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 545900236365FAB004D95C65CDEA5CFF /* NDLog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BE24695A0E711F04E06109063952E1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		133F076971D8B102119152CDA9656C8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1AB2031EF767B0D66D0B54DE41939F0C /* Pods-NDLog_Swift-NDLog_SwiftTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A19BA06ECB39EE9F578B9E8D9872DF49 /* Pods-NDLog_Swift-NDLog_SwiftTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		328889689ECEB8D5FE4EA231568DCB5C /* Pods-NDLog_Swift-NDLog_SwiftTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D04744E6FD0266528AA7EAD869028AF9 /* Pods-NDLog_Swift-NDLog_SwiftTests-dummy.m */; };
+		38B3139F2D20AAF831A6800CFB4FDA90 /* NDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 480E6F6051543088171693086516E382 /* NDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6891E189C0281D69CBFD7A2E8958B168 /* Log.mm in Sources */ = {isa = PBXBuildFile; fileRef = D84F7F4AA3A0AF12A79834F48EF6CA08 /* Log.mm */; };
+		68AE99B709657563211A2728FA0EE315 /* Log.h in Headers */ = {isa = PBXBuildFile; fileRef = 93231EC39A5C2C593B2FCA2C16258E0E /* Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7679544945670DAEB5C855C9A547FE00 /* Pods-NDLog_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C081D543E383EC5F7057B6BE7A0D1B47 /* Pods-NDLog_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2A1941CE4A55041F59F94A0384B7CD2 /* NDLog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3587A1E02FEEA4A08CFD87D8431CF9 /* NDLog-dummy.m */; };
+		C17234627BD876FF1D2A8473108787A6 /* Pods-NDLog_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3998B34E579C41FA6800D47D613203F5 /* Pods-NDLog_Swift-dummy.m */; };
+		D88B73AE1628C3E936022BADDBA2E1BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B31329EFCC4C8B91C5A7251416EF3C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5860BED33EF9D27378704EB0C10FD6C5;
+			remoteInfo = NDLog;
+		};
+		B43C35AF65EA1473A20DEEA4A33EB56E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5860BED33EF9D27378704EB0C10FD6C5;
+			remoteInfo = NDLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FF3D83F8751A0DF28A898E8F8992BD9 /* Pods-NDLog_Swift-NDLog_SwiftTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NDLog_Swift-NDLog_SwiftTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		20018A25B8FFE7E86A358C81F2839251 /* Pods-NDLog_Swift-NDLog_SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NDLog_Swift-NDLog_SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30E5FFC925A0BECEC37225F28C9F683C /* Pods_NDLog_Swift_NDLog_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NDLog_Swift_NDLog_SwiftTests.framework; path = "Pods-NDLog_Swift-NDLog_SwiftTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36050F263AC378B010FD29634276B753 /* Pods-NDLog_Swift-NDLog_SwiftTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NDLog_Swift-NDLog_SwiftTests-Info.plist"; sourceTree = "<group>"; };
+		3998B34E579C41FA6800D47D613203F5 /* Pods-NDLog_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NDLog_Swift-dummy.m"; sourceTree = "<group>"; };
+		480E6F6051543088171693086516E382 /* NDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NDLog.h; path = NDLog/NDLog.h; sourceTree = "<group>"; };
+		4E5DBD7A3FE8AA2B456005E2C2E50D3C /* NDLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NDLog.framework; path = NDLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		545900236365FAB004D95C65CDEA5CFF /* NDLog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NDLog-umbrella.h"; sourceTree = "<group>"; };
+		65F64953E1B2BA554EA6805466009192 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6783FBDF1DAC9E4D2403A7AB44C5534F /* Pods-NDLog_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NDLog_Swift.modulemap"; sourceTree = "<group>"; };
+		694F5F91E400D59CD1971F36D6C789F9 /* Pods-NDLog_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NDLog_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		6F5C633EE5E5CDB176D73CF6F67550FF /* Pods-NDLog_Swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NDLog_Swift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		76A3C2EFA85860AE6217FC1CEF8061A2 /* NDLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NDLog-prefix.pch"; sourceTree = "<group>"; };
+		7DBAE26311538CE13E75C2F58149734A /* NDLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NDLog.debug.xcconfig; sourceTree = "<group>"; };
+		8088092C0F42471BD5F816D85B588904 /* Pods-NDLog_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NDLog_Swift-Info.plist"; sourceTree = "<group>"; };
+		87C3163A10E37D274FCA3F47D04CDB06 /* NDLog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NDLog.modulemap; sourceTree = "<group>"; };
+		93231EC39A5C2C593B2FCA2C16258E0E /* Log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Log.h; path = NDLog/Log.h; sourceTree = "<group>"; };
+		9BC1FDD7E61F7C89E049D7CF5F5B5CEE /* Pods-NDLog_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NDLog_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F3587A1E02FEEA4A08CFD87D8431CF9 /* NDLog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NDLog-dummy.m"; sourceTree = "<group>"; };
+		9FDC20C2BDE31E6A04D9618FE5858FC0 /* Pods_NDLog_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NDLog_Swift.framework; path = "Pods-NDLog_Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19BA06ECB39EE9F578B9E8D9872DF49 /* Pods-NDLog_Swift-NDLog_SwiftTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NDLog_Swift-NDLog_SwiftTests-umbrella.h"; sourceTree = "<group>"; };
+		A90AE1C732BFAB4F48DD5AB707E05B28 /* Pods-NDLog_Swift-NDLog_SwiftTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NDLog_Swift-NDLog_SwiftTests-frameworks.sh"; sourceTree = "<group>"; };
+		B61BD5ED9021447013D4F9217F65DE1B /* Pods-NDLog_Swift-NDLog_SwiftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NDLog_Swift-NDLog_SwiftTests.modulemap"; sourceTree = "<group>"; };
+		BC4D80533FAB6CB9141BA4A2CF7656ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C081D543E383EC5F7057B6BE7A0D1B47 /* Pods-NDLog_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NDLog_Swift-umbrella.h"; sourceTree = "<group>"; };
+		C5A063DA5B31CACAD61ABFD33C71EDFE /* NDLog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NDLog.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CEF946FBFB7CFBD885A95B308685D9F2 /* Pods-NDLog_Swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NDLog_Swift-acknowledgements.plist"; sourceTree = "<group>"; };
+		D04744E6FD0266528AA7EAD869028AF9 /* Pods-NDLog_Swift-NDLog_SwiftTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NDLog_Swift-NDLog_SwiftTests-dummy.m"; sourceTree = "<group>"; };
+		D84F7F4AA3A0AF12A79834F48EF6CA08 /* Log.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = Log.mm; path = NDLog/Log.mm; sourceTree = "<group>"; };
+		E13CE83F2FAB34027DF4B231901B3FB7 /* NDLog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NDLog-Info.plist"; sourceTree = "<group>"; };
+		EB010C254472292FACE6CE807112E3ED /* Pods-NDLog_Swift-NDLog_SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NDLog_Swift-NDLog_SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF442A596180DE23C576168196A70680 /* NDLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NDLog.release.xcconfig; sourceTree = "<group>"; };
+		FDF509579D5BAC72A7DF29E30D708E70 /* Pods-NDLog_Swift-NDLog_SwiftTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NDLog_Swift-NDLog_SwiftTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		337B1CFF72A20C35F75E2AB31DFAF579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE24695A0E711F04E06109063952E1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B6410BECD0B901F08FFF8EA64468FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133F076971D8B102119152CDA9656C8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F0A472AEE90C2AA5D6AC45FA56C75F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88B73AE1628C3E936022BADDBA2E1BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08DB4BDF118A748483400BA90AF8C73B /* NDLog */ = {
+			isa = PBXGroup;
+			children = (
+				93231EC39A5C2C593B2FCA2C16258E0E /* Log.h */,
+				D84F7F4AA3A0AF12A79834F48EF6CA08 /* Log.mm */,
+				480E6F6051543088171693086516E382 /* NDLog.h */,
+				416F5FDE8BA4B8CE50F1E29D177D0D13 /* Pod */,
+				13C3B4AC0E05BD1FC140CADBB29C1478 /* Support Files */,
+			);
+			name = NDLog;
+			path = ../../NDLog;
+			sourceTree = "<group>";
+		};
+		13C3B4AC0E05BD1FC140CADBB29C1478 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				87C3163A10E37D274FCA3F47D04CDB06 /* NDLog.modulemap */,
+				9F3587A1E02FEEA4A08CFD87D8431CF9 /* NDLog-dummy.m */,
+				E13CE83F2FAB34027DF4B231901B3FB7 /* NDLog-Info.plist */,
+				76A3C2EFA85860AE6217FC1CEF8061A2 /* NDLog-prefix.pch */,
+				545900236365FAB004D95C65CDEA5CFF /* NDLog-umbrella.h */,
+				7DBAE26311538CE13E75C2F58149734A /* NDLog.debug.xcconfig */,
+				EF442A596180DE23C576168196A70680 /* NDLog.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../NDLog_Swift/Pods/Target Support Files/NDLog";
+			sourceTree = "<group>";
+		};
+		416F5FDE8BA4B8CE50F1E29D177D0D13 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				65F64953E1B2BA554EA6805466009192 /* LICENSE */,
+				C5A063DA5B31CACAD61ABFD33C71EDFE /* NDLog.podspec */,
+				BC4D80533FAB6CB9141BA4A2CF7656ED /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5B1F5B4EEFD085FAF1302E671B9C4795 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E5DBD7A3FE8AA2B456005E2C2E50D3C /* NDLog.framework */,
+				9FDC20C2BDE31E6A04D9618FE5858FC0 /* Pods_NDLog_Swift.framework */,
+				30E5FFC925A0BECEC37225F28C9F683C /* Pods_NDLog_Swift_NDLog_SwiftTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CB4823A91028E161648B5B0223607C3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D248A143A8947DD6634BFA884B6C74D6 /* Pods-NDLog_Swift */,
+				CF2954B171E0FD50D9D7359FA1D211A9 /* Pods-NDLog_Swift-NDLog_SwiftTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A3DFACA53679DD4DC61BEAE5366BEABB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08DB4BDF118A748483400BA90AF8C73B /* NDLog */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A3DFACA53679DD4DC61BEAE5366BEABB /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				5B1F5B4EEFD085FAF1302E671B9C4795 /* Products */,
+				5CB4823A91028E161648B5B0223607C3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF2954B171E0FD50D9D7359FA1D211A9 /* Pods-NDLog_Swift-NDLog_SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B61BD5ED9021447013D4F9217F65DE1B /* Pods-NDLog_Swift-NDLog_SwiftTests.modulemap */,
+				FDF509579D5BAC72A7DF29E30D708E70 /* Pods-NDLog_Swift-NDLog_SwiftTests-acknowledgements.markdown */,
+				0FF3D83F8751A0DF28A898E8F8992BD9 /* Pods-NDLog_Swift-NDLog_SwiftTests-acknowledgements.plist */,
+				D04744E6FD0266528AA7EAD869028AF9 /* Pods-NDLog_Swift-NDLog_SwiftTests-dummy.m */,
+				A90AE1C732BFAB4F48DD5AB707E05B28 /* Pods-NDLog_Swift-NDLog_SwiftTests-frameworks.sh */,
+				36050F263AC378B010FD29634276B753 /* Pods-NDLog_Swift-NDLog_SwiftTests-Info.plist */,
+				A19BA06ECB39EE9F578B9E8D9872DF49 /* Pods-NDLog_Swift-NDLog_SwiftTests-umbrella.h */,
+				20018A25B8FFE7E86A358C81F2839251 /* Pods-NDLog_Swift-NDLog_SwiftTests.debug.xcconfig */,
+				EB010C254472292FACE6CE807112E3ED /* Pods-NDLog_Swift-NDLog_SwiftTests.release.xcconfig */,
+			);
+			name = "Pods-NDLog_Swift-NDLog_SwiftTests";
+			path = "Target Support Files/Pods-NDLog_Swift-NDLog_SwiftTests";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D248A143A8947DD6634BFA884B6C74D6 /* Pods-NDLog_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				6783FBDF1DAC9E4D2403A7AB44C5534F /* Pods-NDLog_Swift.modulemap */,
+				6F5C633EE5E5CDB176D73CF6F67550FF /* Pods-NDLog_Swift-acknowledgements.markdown */,
+				CEF946FBFB7CFBD885A95B308685D9F2 /* Pods-NDLog_Swift-acknowledgements.plist */,
+				3998B34E579C41FA6800D47D613203F5 /* Pods-NDLog_Swift-dummy.m */,
+				8088092C0F42471BD5F816D85B588904 /* Pods-NDLog_Swift-Info.plist */,
+				C081D543E383EC5F7057B6BE7A0D1B47 /* Pods-NDLog_Swift-umbrella.h */,
+				694F5F91E400D59CD1971F36D6C789F9 /* Pods-NDLog_Swift.debug.xcconfig */,
+				9BC1FDD7E61F7C89E049D7CF5F5B5CEE /* Pods-NDLog_Swift.release.xcconfig */,
+			);
+			name = "Pods-NDLog_Swift";
+			path = "Target Support Files/Pods-NDLog_Swift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B5CD9FDD72BC9E77A7CD8E3CAD03D2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7679544945670DAEB5C855C9A547FE00 /* Pods-NDLog_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4629DBB5167B59E82525EA41D8DC5696 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB2031EF767B0D66D0B54DE41939F0C /* Pods-NDLog_Swift-NDLog_SwiftTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F08A5A85B5CC6B42984A8B36ECC7F1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68AE99B709657563211A2728FA0EE315 /* Log.h in Headers */,
+				028C5BECAF6D08FB02C7BB2A71068FB2 /* NDLog-umbrella.h in Headers */,
+				38B3139F2D20AAF831A6800CFB4FDA90 /* NDLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5860BED33EF9D27378704EB0C10FD6C5 /* NDLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C16F0D8A798C80E6276505FA726A60EF /* Build configuration list for PBXNativeTarget "NDLog" */;
+			buildPhases = (
+				6F08A5A85B5CC6B42984A8B36ECC7F1D /* Headers */,
+				C618EAC269A4A13B4425E8731026988A /* Sources */,
+				60B6410BECD0B901F08FFF8EA64468FD /* Frameworks */,
+				F44E22ABE2E63E6945002B7CC0498B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NDLog;
+			productName = NDLog;
+			productReference = 4E5DBD7A3FE8AA2B456005E2C2E50D3C /* NDLog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		969DDFF7955CCCA6E89B826404373E95 /* Pods-NDLog_Swift-NDLog_SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55AA7CD7E976353CCC90361DA8AB46F1 /* Build configuration list for PBXNativeTarget "Pods-NDLog_Swift-NDLog_SwiftTests" */;
+			buildPhases = (
+				4629DBB5167B59E82525EA41D8DC5696 /* Headers */,
+				3D7A9EDCD5AF41A35BD355B384E4D857 /* Sources */,
+				D8F0A472AEE90C2AA5D6AC45FA56C75F /* Frameworks */,
+				E37D849AC8FF1EC27B879C289F8FFD72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C03CEC914150A6D6FE1A3B20D87CBD64 /* PBXTargetDependency */,
+			);
+			name = "Pods-NDLog_Swift-NDLog_SwiftTests";
+			productName = "Pods-NDLog_Swift-NDLog_SwiftTests";
+			productReference = 30E5FFC925A0BECEC37225F28C9F683C /* Pods_NDLog_Swift_NDLog_SwiftTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB2E27B708C40CF968CDFAA0956B1104 /* Pods-NDLog_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98E339221EB98C3BB5B0637B7040BD3C /* Build configuration list for PBXNativeTarget "Pods-NDLog_Swift" */;
+			buildPhases = (
+				2B5CD9FDD72BC9E77A7CD8E3CAD03D2C /* Headers */,
+				0FC16AB92ED47646B5A25540A3CE0755 /* Sources */,
+				337B1CFF72A20C35F75E2AB31DFAF579 /* Frameworks */,
+				7A2ACFFF3AB229A05D630E01F8C8D5C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79EA81D0A8B377B9BF37AD826A308C60 /* PBXTargetDependency */,
+			);
+			name = "Pods-NDLog_Swift";
+			productName = "Pods-NDLog_Swift";
+			productReference = 9FDC20C2BDE31E6A04D9618FE5858FC0 /* Pods_NDLog_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5B1F5B4EEFD085FAF1302E671B9C4795 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5860BED33EF9D27378704EB0C10FD6C5 /* NDLog */,
+				AB2E27B708C40CF968CDFAA0956B1104 /* Pods-NDLog_Swift */,
+				969DDFF7955CCCA6E89B826404373E95 /* Pods-NDLog_Swift-NDLog_SwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A2ACFFF3AB229A05D630E01F8C8D5C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37D849AC8FF1EC27B879C289F8FFD72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44E22ABE2E63E6945002B7CC0498B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FC16AB92ED47646B5A25540A3CE0755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17234627BD876FF1D2A8473108787A6 /* Pods-NDLog_Swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D7A9EDCD5AF41A35BD355B384E4D857 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328889689ECEB8D5FE4EA231568DCB5C /* Pods-NDLog_Swift-NDLog_SwiftTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C618EAC269A4A13B4425E8731026988A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6891E189C0281D69CBFD7A2E8958B168 /* Log.mm in Sources */,
+				A2A1941CE4A55041F59F94A0384B7CD2 /* NDLog-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79EA81D0A8B377B9BF37AD826A308C60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NDLog;
+			target = 5860BED33EF9D27378704EB0C10FD6C5 /* NDLog */;
+			targetProxy = B43C35AF65EA1473A20DEEA4A33EB56E /* PBXContainerItemProxy */;
+		};
+		C03CEC914150A6D6FE1A3B20D87CBD64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NDLog;
+			target = 5860BED33EF9D27378704EB0C10FD6C5 /* NDLog */;
+			targetProxy = 1B31329EFCC4C8B91C5A7251416EF3C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F76D2BE60C7570729A87ECF1FB79AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20018A25B8FFE7E86A358C81F2839251 /* Pods-NDLog_Swift-NDLog_SwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NDLog_Swift-NDLog_SwiftTests/Pods-NDLog_Swift-NDLog_SwiftTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NDLog_Swift-NDLog_SwiftTests/Pods-NDLog_Swift-NDLog_SwiftTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		348F74DD848903EE54C790A79555BEEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694F5F91E400D59CD1971F36D6C789F9 /* Pods-NDLog_Swift.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NDLog_Swift/Pods-NDLog_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NDLog_Swift/Pods-NDLog_Swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35BEFA7448361B0D0C19DDFD74DEDCF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF442A596180DE23C576168196A70680 /* NDLog.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NDLog/NDLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NDLog/NDLog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NDLog/NDLog.modulemap";
+				PRODUCT_MODULE_NAME = NDLog;
+				PRODUCT_NAME = NDLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B36A0872D84F6ED88C19E2479B1BCEDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DBAE26311538CE13E75C2F58149734A /* NDLog.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NDLog/NDLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NDLog/NDLog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NDLog/NDLog.modulemap";
+				PRODUCT_MODULE_NAME = NDLog;
+				PRODUCT_NAME = NDLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7563E2B333CFB5B8B90AE37C925B994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB010C254472292FACE6CE807112E3ED /* Pods-NDLog_Swift-NDLog_SwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NDLog_Swift-NDLog_SwiftTests/Pods-NDLog_Swift-NDLog_SwiftTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NDLog_Swift-NDLog_SwiftTests/Pods-NDLog_Swift-NDLog_SwiftTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F5F04600F5626DC980F02790D1ED2C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F854A187DDBAAC16D9DF08383B09D718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC1FDD7E61F7C89E049D7CF5F5B5CEE /* Pods-NDLog_Swift.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NDLog_Swift/Pods-NDLog_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NDLog_Swift/Pods-NDLog_Swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */,
+				F5F04600F5626DC980F02790D1ED2C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AA7CD7E976353CCC90361DA8AB46F1 /* Build configuration list for PBXNativeTarget "Pods-NDLog_Swift-NDLog_SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F76D2BE60C7570729A87ECF1FB79AE0 /* Debug */,
+				B7563E2B333CFB5B8B90AE37C925B994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98E339221EB98C3BB5B0637B7040BD3C /* Build configuration list for PBXNativeTarget "Pods-NDLog_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				348F74DD848903EE54C790A79555BEEB /* Debug */,
+				F854A187DDBAAC16D9DF08383B09D718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C16F0D8A798C80E6276505FA726A60EF /* Build configuration list for PBXNativeTarget "NDLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36A0872D84F6ED88C19E2479B1BCEDC /* Debug */,
+				35BEFA7448361B0D0C19DDFD74DEDCF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

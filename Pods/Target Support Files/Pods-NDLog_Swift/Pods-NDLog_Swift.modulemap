@@ -1,0 +1,6 @@
+framework module Pods_NDLog_Swift {
+  umbrella header "Pods-NDLog_Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
