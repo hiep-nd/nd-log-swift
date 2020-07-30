@@ -44,7 +44,7 @@
 		BA5647B724A4635400ABCD10 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BA5647B824A4635400ABCD10 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BA5647B924A4635400ABCD10 /* .swift-format */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-format"; sourceTree = "<group>"; };
-		BA5647BA24A4635400ABCD10 /* NDLog_Swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NDLog_Swift.podspec; sourceTree = "<group>"; };
+		BA5647BA24A4635400ABCD10 /* NDLog_Swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NDLog_Swift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BA5647BB24A4635400ABCD10 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BA5647C124A4647100ABCD10 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		BBA913A4B0587C5825B39FA8 /* Pods-NDLog_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDLog_Swift.release.xcconfig"; path = "Target Support Files/Pods-NDLog_Swift/Pods-NDLog_Swift.release.xcconfig"; sourceTree = "<group>"; };

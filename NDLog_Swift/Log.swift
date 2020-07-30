@@ -36,7 +36,7 @@ public func nd_log(
   tag: Any? = nil
 ) {
   nd_log(
-    message: error(), severity: .error, function: function, file: file,
+    severity: .error, message: error(), function: function, file: file,
     line: line, tag: tag)
 }
 
@@ -49,7 +49,7 @@ public func nd_log(
   tag: Any? = nil
 ) {
   nd_log(
-    message: warning(), severity: .warning, function: function, file: file,
+    severity: .warning, message: warning(), function: function, file: file,
     line: line, tag: tag)
 }
 
@@ -62,7 +62,7 @@ public func nd_log(
   tag: Any? = nil
 ) {
   nd_log(
-    message: info(), severity: .info, function: function, file: file,
+    severity: .info, message: info(), function: function, file: file,
     line: line, tag: tag)
 }
 
@@ -75,7 +75,7 @@ public func nd_log(
   tag: Any? = nil
 ) {
   nd_log(
-    message: debug(), severity: .debug, function: function, file: file,
+    severity: .debug, message: debug(), function: function, file: file,
     line: line, tag: tag)
 }
 
@@ -88,21 +88,24 @@ public func nd_log(
   tag: Any? = nil
 ) {
   nd_log(
-    message: verbose(), severity: .verbose, function: function, file: file,
+    severity: .verbose, message: verbose(), function: function, file: file,
     line: line, tag: tag)
 }
 
 @inlinable
 public func nd_log(
-  message: @autoclosure () -> String, severity: NDLogSeverity,
+  severity: NDLogSeverity,
+  message: @autoclosure () -> String,
   function: StaticString = #function,
   file: StaticString = #file,
   line: UInt = #line,
   tag: Any? = nil
 ) {
-  __NDLogMessage(
-    message(), severity, String(describing: file), String(describing: function),
-    line, tag)
+  if (definedLogLevel().rawValue & severity.rawValue) != 0 {
+    __NDLogMessage(
+      severity, message(), String(describing: file),
+      String(describing: function), line, tag)
+  }
 }
 
 @inlinable
@@ -114,12 +117,32 @@ public func nd_assert(
   line: UInt = #line,
   tag: Any? = nil
 ) {
-  let cond = condition()
-  if !cond {
-    let mesg = message()
-    let logMesg = mesg.count > 0
-      ? "Failure assertion. \(mesg)" : "Failure assertion."
-    nd_log(error: logMesg, function: function, file: file, line: line, tag: tag)
-    Swift.assertionFailure(logMesg, file: file, line: line)
+  if !condition() {
+    var logMesg: String? = nil
+    func getLogMesg() -> String {
+      if let logMesg = logMesg {
+        return logMesg
+      }
+      let mesg = message()
+      logMesg = mesg.count > 0
+        ? "Failure assertion. \(mesg)" : "Failure assertion."
+      return logMesg!
+    }
+
+    nd_log(
+      error: getLogMesg(), function: function, file: file, line: line, tag: tag)
+    Swift.assertionFailure(getLogMesg(), file: file, line: line)
   }
+}
+
+@inlinable
+public func nd_assertionFailure(
+  _ message: @autoclosure () -> String = String(),
+  function: StaticString = #function,
+  file: StaticString = #file,
+  line: UInt = #line,
+  tag: Any? = nil
+) {
+  nd_assert(
+    false, message(), function: function, file: file, line: line, tag: tag)
 }

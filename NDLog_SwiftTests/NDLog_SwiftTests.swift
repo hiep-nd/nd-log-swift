@@ -10,7 +10,43 @@ import XCTest
 
 @testable import NDLog_Swift
 
+protocol MockClosureResult {
+  init()
+}
+
+extension Bool: MockClosureResult {}
+extension String: MockClosureResult {}
+
+class MockClosure<T: MockClosureResult> {
+  var callCount = 0
+  var result = T()
+
+  func reset(result: T = T()) {
+    callCount = 0
+    self.result = result
+  }
+
+  var closure: (() -> T) {
+    return { [weak self] in
+      guard let strongSelf = self else { return T() }
+      strongSelf.callCount += 1
+      return strongSelf.result
+    }
+  }
+}
+
 class NDLog_SwiftTests: XCTestCase {
+  let condition = MockClosure<Bool>()
+  let message = MockClosure<String>()
+  let tag = MockClosure<String>()
+
+  override func setUp() {
+    super.setUp()
+    condition.reset()
+    message.reset()
+    tag.reset()
+  }
+
   func test_Config() throws {
     XCTAssertTrue(nd_configureLog(paras: [.level: NDLogLevel.warning]))
     XCTAssertEqual(NDLogLevel.warning, definedLogLevel())
@@ -24,8 +60,22 @@ class NDLog_SwiftTests: XCTestCase {
     }
   }
 
-  func test_Assert() throws {
-    nd_assert(true)
+  func test_Assert_failure() throws {
+    nd_assert(condition.closure(), message.closure(), tag: tag.closure())
+    XCTAssert(condition.callCount == 1)
+    XCTAssert(message.callCount == 1)
+    XCTAssert(tag.callCount == 1)
+  }
+
+  func test_Assert_true() throws {
+    condition.reset(result: true)
+    nd_assert(condition.closure(), message.closure())
+    XCTAssert(message.callCount == 0)
+    XCTAssert(tag.callCount == 0)
+  }
+
+  func test_AssertionFailure() throws {
+    nd_assertionFailure()
   }
 
   func test_LogError() throws {

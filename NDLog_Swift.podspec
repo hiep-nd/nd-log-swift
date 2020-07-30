@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NDLog_Swift"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "A log system."
   s.description  = <<-DESC
   NDLog_Swift is a small and lightweight framework that help log.
@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/hiep-nd/nd-log-swift.git", :tag => "Pod-#{s.version}" }
   
   s.source_files  = "NDLog_Swift/**/*.{h,m,mm,swift}"
-  s.dependency 'NDLog'
+  s.dependency 'NDLog', '~> 0.0.4'
 end
