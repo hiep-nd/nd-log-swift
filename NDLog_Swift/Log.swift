@@ -14,7 +14,8 @@ public func nd_configureLog(paras: [NDLogParameterKey: Any]) -> Bool {
       {
         switch $1.key {
         case .level:
-          $0[$1.key] = ($1.value is NDLogLevel)
+          $0[$1.key] =
+            ($1.value is NDLogLevel)
             ? ($1.value as! NDLogLevel).rawValue : $1.value
         default:
           $0[$1.key] = $1.value
@@ -117,22 +118,12 @@ public func nd_assert(
   line: UInt = #line,
   tag: Any? = nil
 ) {
-  if !condition() {
-    var logMesg: String? = nil
-    func getLogMesg() -> String {
-      if let logMesg = logMesg {
-        return logMesg
-      }
-      let mesg = message()
-      logMesg = mesg.count > 0
-        ? "Failure assertion. \(mesg)" : "Failure assertion."
-      return logMesg!
-    }
-
-    nd_log(
-      error: getLogMesg(), function: function, file: file, line: line, tag: tag)
-    Swift.assertionFailure(getLogMesg(), file: file, line: line)
-  }
+  _nd_assert(
+    condition(), message(), function: function, file: file, line: line,
+    tag: tag, failureHandlers: nd_log(error:function:file:line:tag:),
+    { message, _, file, line, _ in
+      Swift.assertionFailure(message(), file: file, line: line)
+    })
 }
 
 @inlinable
@@ -145,4 +136,80 @@ public func nd_assertionFailure(
 ) {
   nd_assert(
     false, message(), function: function, file: file, line: line, tag: tag)
+}
+
+@inlinable
+public func nd_dassert(
+  _ condition: @autoclosure () -> Bool,
+  _ message: @autoclosure () -> String = String(),
+  function: StaticString = #function,
+  file: StaticString = #file,
+  line: UInt = #line,
+  tag: Any? = nil
+) {
+  _nd_assert(
+    condition(), message(), function: function, file: file, line: line,
+    tag: tag, failureHandlers: nd_log(error:function:file:line:tag:),
+    { _, _, _, _, _ in
+      if _isDebugAssertConfiguration() { raise(SIGTRAP) }
+    })
+}
+
+@inlinable
+public func nd_dassertionFailure(
+  _ message: @autoclosure () -> String = String(),
+  function: StaticString = #function,
+  file: StaticString = #file,
+  line: UInt = #line,
+  tag: Any? = nil
+) {
+  nd_dassert(
+    false, message(), function: function, file: file, line: line, tag: tag)
+}
+
+@inlinable
+public func nd_fatalError(
+  _ message: @autoclosure () -> String = String(),
+  function: StaticString = #function,
+  file: StaticString = #file,
+  line: UInt = #line,
+  tag: Any? = nil
+) {
+  _nd_assert(
+    false, message(), function: function, file: file, line: line, tag: tag,
+    failureHandlers: nd_log(error:function:file:line:tag:),
+    { error, _, file, line, _ in fatalError(error(), file: file, line: line) })
+}
+
+@inlinable
+public func _nd_assert(
+  _ condition: @autoclosure () -> Bool, _ message: @autoclosure () -> String,
+  function: StaticString = #function,
+  file: StaticString = #file,
+  line: UInt = #line,
+  tag: Any? = nil,
+  failureHandlers: (
+    (
+      () -> String, _ function: StaticString, _ file: StaticString,
+      _ line: UInt, _ tag: Any?
+    ) -> Void
+  )...
+) {
+  if !condition() {
+    var logMesg: String? = nil
+    func getLogMesg() -> String {
+      if let logMesg = logMesg {
+        return logMesg
+      }
+      let mesg = message()
+      logMesg =
+        mesg.count > 0
+        ? "Failure assertion. \(mesg)" : "Failure assertion."
+      return logMesg!
+    }
+
+    failureHandlers.forEach {
+      $0(getLogMesg, function, file, line, tag)
+    }
+  }
 }

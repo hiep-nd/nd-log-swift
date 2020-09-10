@@ -74,31 +74,49 @@ class NDLog_SwiftTests: XCTestCase {
     XCTAssert(tag.callCount == 0)
   }
 
-  func test_AssertionFailure() throws {
-    nd_assertionFailure()
-  }
-
   func test_LogError() throws {
-    nd_log(error: "Error message")
+    nd_log(error: "Error message.")
   }
 
   func test_LogWarning() throws {
-    nd_log(warning: "Warning message")
+    nd_log(warning: "Warning message.")
   }
 
   func test_LogInfo() throws {
-    nd_log(info: "Info message")
+    nd_log(info: "Info message.")
   }
 
   func test_LogDebug() throws {
-    nd_log(info: "Debug message")
+    nd_log(info: "Debug message.")
   }
 
   func test_LogVerbose() throws {
-    nd_log(verbose: "Verbose message")
+    nd_log(verbose: "Verbose message.")
   }
 
   func test_LogTagError() {
-    nd_log(error: "Error message", tag: "mylog")
+    nd_log(error: "Error message.", tag: "#tag")
+  }
+
+  func test_Assert() {
+    nd_assert(true, "Assert message.", tag: "#tag")
+    nd_assert(false, "Assert message.", tag: "#tag")
+  }
+  
+  func test_AssertionFailure() {
+    nd_assertionFailure("Assertion failure message.", tag: "#tag")
+  }
+
+  func test_DAssert() {
+    nd_dassert(true, "DAssert message.", tag: "#tag")
+    nd_dassert(false, "DAssert message.", tag: "#tag")
+  }
+  
+  func test_DAssertionFailure() {
+    nd_dassertionFailure("DAssertion failure message.", tag: "#tag")
+  }
+  
+  func test_FatalError() {
+    nd_fatalError("Fatal error message.", tag: "#tag")
   }
 }
