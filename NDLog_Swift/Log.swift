@@ -147,12 +147,18 @@ public func nd_dassert(
   line: UInt = #line,
   tag: Any? = nil
 ) {
-  _nd_assert(
-    condition(), message(), function: function, file: file, line: line,
-    tag: tag, failureHandlers: nd_log(error:function:file:line:tag:),
-    { _, _, _, _, _ in
-      if _isDebugAssertConfiguration() { raise(SIGTRAP) }
-    })
+  #if DEBUG
+    _nd_assert(
+      condition(), message(), function: function, file: file, line: line,
+      tag: tag, failureHandlers: nd_log(error:function:file:line:tag:),
+      { _, _, _, _, _ in
+        raise(SIGTRAP)
+      })
+  #else
+    _nd_assert(
+      condition(), message(), function: function, file: file, line: line,
+      tag: tag, failureHandlers: nd_log(error:function:file:line:tag:))
+  #endif
 }
 
 @inlinable

@@ -102,7 +102,7 @@ class NDLog_SwiftTests: XCTestCase {
     nd_assert(true, "Assert message.", tag: "#tag")
     nd_assert(false, "Assert message.", tag: "#tag")
   }
-  
+
   func test_AssertionFailure() {
     nd_assertionFailure("Assertion failure message.", tag: "#tag")
   }
@@ -111,11 +111,11 @@ class NDLog_SwiftTests: XCTestCase {
     nd_dassert(true, "DAssert message.", tag: "#tag")
     nd_dassert(false, "DAssert message.", tag: "#tag")
   }
-  
+
   func test_DAssertionFailure() {
     nd_dassertionFailure("DAssertion failure message.", tag: "#tag")
   }
-  
+
   func test_FatalError() {
     nd_fatalError("Fatal error message.", tag: "#tag")
   }
